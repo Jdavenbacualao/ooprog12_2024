@@ -1,0 +1,65 @@
+
+//file one
+public class Circle {
+
+    // Static variables to store radius, diameter, and area
+    private static double radius;
+    private static double diameter;
+    private static double area;
+
+    // Constructor to initialize radius to 1 and calculate diameter and area
+    public Circle() {
+        radius = 1;
+        diameter = 2 * radius;
+        area = Math.PI * radius * radius;
+    }
+
+    // Method to set radius, and recalculate diameter and area
+    public void setRadius(double rad) {
+        radius = rad;
+        diameter = 2 * radius;
+        area = Math.PI * radius * radius;
+    }
+
+    // Static method to get radius
+    public static double getRadius() {
+        return radius;
+    }
+
+    // Static method to get diameter
+    public static double getDiameter() {
+        return diameter;
+    }
+
+    // Static method to get area
+    public static double getArea() {
+        return area;
+    }
+}
+//fle two
+public class TestCircle {
+
+    public static void main(String[] args) {
+        // Create three Circle objects: a, b, and c
+        Circle a = new Circle();
+        Circle b = new Circle();
+        Circle c = new Circle();
+
+        // Set radius for the first circle to 3
+        a.setRadius(3);
+
+        // Print the radius, diameter, and area for the first circle
+        System.out.println("Circle a - Radius: " + Circle.getRadius());
+        System.out.println("Circle a - Diameter: " + Circle.getDiameter());
+        System.out.println("Circle a - Area: " + Circle.getArea());
+
+        // Set radius for the second circle to 20
+        b.setRadius(20);
+
+        // Print the radius, diameter, and area for the second circle
+        System.out.println("Circle b - Radius: " + Circle.getRadius());
+        System.out.println("Circle b - Diameter: " + Circle.getDiameter());
+        System.out.println("Circle b - Area: " + Circle.getArea());
+    }
+}
+
