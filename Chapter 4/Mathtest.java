@@ -5,11 +5,11 @@ public class MathTest {
         System.out.println("SQRT: " + sqrtResult);
 
         
-        double sinResult = Math.sin(Math.toRadians(270)); // Convert 270 degrees to radians
+        double sinResult = Math.sin(Math.toRadians(270)); 
         System.out.println("SIN: " + sinResult);
 
         
-        double cosResult = Math.cos(Math.toRadians(270)); // Convert 270 degrees to radians
+        double cosResult = Math.cos(Math.toRadians(270));
         System.out.println("COS: " + cosResult);
 
         
@@ -33,7 +33,7 @@ public class MathTest {
         System.out.println("MIN: " + minResult);
 
         
-        double randomResult = Math.random() * 100; // Generates a random number between 0 and 100
+        double randomResult = Math.random() * 100;
         System.out.println("RANDOM: " + randomResult);
     }
 }
