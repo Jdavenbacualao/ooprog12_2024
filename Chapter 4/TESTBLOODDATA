@@ -1,0 +1,29 @@
+TESTBLOODDATA
+
+import java.util.Scanner;
+
+public class TestBloodData {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        
+        BloodData patient = new BloodData();
+
+        
+        System.out.print("Enter Blood Type: ");
+        String bloodType = input.nextLine();
+        patient.setBlood(bloodType);
+
+        
+        System.out.print("Enter Rh Factor: ");
+        String rhFactor = input.nextLine();
+        patient.setRhFactor(rhFactor);
+
+        
+        patient.displayBloodInfo();
+        
+        
+        
+        input.close();
+    }
+}
